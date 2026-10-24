@@ -1,0 +1,10 @@
+"""uv run python -m asaxiy.bot uchun kirish nuqtasi."""
+
+import asyncio
+import logging
+
+from .main import main
+
+if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO)
+    asyncio.run(main())
